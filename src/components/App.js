@@ -13,13 +13,10 @@ const App = () => {
       <input 
         type="text" 
         placeholder="Enter your name" 
-        defaultValue="" 
         value={name} 
         onChange={handleInputChange} 
       />
-      <h2>
-        {name ? `Hello, ${name}!` : ''}
-      </h2>
+      {name && <h2>Hello, {name}!</h2>}
     </div>
   );
 };
