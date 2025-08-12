@@ -12,7 +12,7 @@ const App = () => {
         value={name}
         onChange={e => setName(e.target.value)}
       />
-      <h2>Hello, {name}n!</h2>
+      <h2>Hello {name}!</h2>
     </div>
   );
 };
