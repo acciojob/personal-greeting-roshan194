@@ -3,18 +3,14 @@ import React, { useState } from 'react';
 const App = () => {
   const [name, setName] = useState('');
 
-  const handleInputChange = (event) => {
-    setName(event.target.value);
-  };
-
   return (
     <div>
       <h1>Personalized Greeting</h1>
-      <input 
-        type="text" 
-        placeholder="Enter your name" 
-        value={name} 
-        onChange={handleInputChange} 
+      <input
+        type="text"
+        placeholder="Enter your name"
+        value={name}
+        onChange={e => setName(e.target.value)}
       />
       {name && <h2>Hello, {name}!</h2>}
     </div>
