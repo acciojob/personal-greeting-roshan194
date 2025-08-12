@@ -13,6 +13,7 @@ const App = () => {
       <input 
         type="text" 
         placeholder="Enter your name" 
+        defaultValue="" 
         value={name} 
         onChange={handleInputChange} 
       />
